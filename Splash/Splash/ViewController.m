@@ -62,7 +62,8 @@
         [self.view layoutIfNeeded];
         [_splashHeader layoutIfNeeded];
     } completion:^(BOOL finished) {
-        NSLog(@"End");
+        [_splashHeader setHidden:YES];
+        [self.navigationController.navigationBar setHidden:NO];
     }];
     
 }
