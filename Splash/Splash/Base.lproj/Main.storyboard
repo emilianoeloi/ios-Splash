@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="jupiter" translatesAutoresizingMaskIntoConstraints="NO" id="fbB-XT-2gK">
+                                <frame key="frameInset" minX="87" minY="304" width="240" height="128"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FGD-UA-txr">
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kXJ-fG-aRT">
+                                        <color key="backgroundColor" red="0.82147607810000001" green="1" blue="0.72616934460000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="kXJ-fG-aRT" secondAttribute="height" multiplier="1:1" id="W5d-j3-GoJ"/>
+                                            <constraint firstAttribute="height" constant="100" id="Yvk-j5-Bwt"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="kXJ-fG-aRT" firstAttribute="centerY" secondItem="FGD-UA-txr" secondAttribute="centerY" id="JD2-o6-04x"/>
+                                    <constraint firstAttribute="height" constant="64" id="QDW-Yr-WqL"/>
+                                    <constraint firstItem="kXJ-fG-aRT" firstAttribute="centerX" secondItem="FGD-UA-txr" secondAttribute="centerX" id="kBC-4m-9rz"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="QDW-Yr-WqL"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fbB-XT-2gK" secondAttribute="bottom" id="0Av-3u-xwb"/>
+                            <constraint firstAttribute="trailing" secondItem="fbB-XT-2gK" secondAttribute="trailing" id="3va-MV-cAX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FGD-UA-txr" secondAttribute="bottom" id="GdJ-Yu-sHn"/>
+                            <constraint firstAttribute="trailing" secondItem="FGD-UA-txr" secondAttribute="trailing" id="NGv-IV-rso"/>
+                            <constraint firstItem="FGD-UA-txr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="PWO-01-qDq"/>
+                            <constraint firstItem="fbB-XT-2gK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Vf1-8R-Cj8"/>
+                            <constraint firstItem="fbB-XT-2gK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="djo-ub-MJz"/>
+                            <constraint firstItem="FGD-UA-txr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eIA-ys-dvs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="logo" destination="kXJ-fG-aRT" id="p5i-9K-RRM"/>
+                        <outlet property="logoHeight" destination="Yvk-j5-Bwt" id="xzG-7F-4fY"/>
+                        <outlet property="logoYCenter" destination="JD2-o6-04x" id="hoB-dL-Hpm"/>
+                        <outlet property="splashHeader" destination="FGD-UA-txr" id="vFj-b1-PoX"/>
+                        <outlet property="splashHeaderBottom" destination="GdJ-Yu-sHn" id="Nnd-Ua-5R3"/>
+                        <outlet property="splashHeaderHeight" destination="QDW-Yr-WqL" id="TpE-RP-dWI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="jupiter" width="414" height="736"/>
+    </resources>
+</document>
