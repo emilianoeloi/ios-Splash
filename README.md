@@ -3,7 +3,8 @@ iOS Splash
 
 ## Descriptions
 
-I made a SplashScreen that transform in Header. I made using LaunchScreen with same configuration that MainView, and then I disabled the BottomConstraint of the MainView and then enable a HeightConstraint to animate from full screen to format of header. 
+
+I've created a SplashScreen that transform itself in Navigation Header. I've achieved that by using the LaunchScreen with the same configuration of the MainView. Then i disabled MainView's Bottom constraint and enabled it's Height constraint to animate from fullscreen to header's format. 
 
 ## References
 
